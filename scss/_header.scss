@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+body > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px;
+    align-items: center;
+}
+
+body > header > h1 img {
+    width: 146px;
+}
+
+@media (min-width: 768px) {
+    body > header {
+        margin-left: unset;
+        margin-right: unset;
+        padding-left: $section_padding_desktop;
+        padding-right: $section_padding_desktop;
+    }
+    body > header > h1 img {
+        width: auto;
+    }
+}

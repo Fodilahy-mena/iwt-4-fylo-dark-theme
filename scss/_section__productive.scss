@@ -1,0 +1,58 @@
+@import './variables';
+
+.section__productive {
+    margin-top: 6rem;
+}
+.productive__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.productive__content {
+    text-align: left;
+}
+
+.productive__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $accent_color_cyan;
+    border-bottom: 2px solid $accent_color_cyan;
+    width: max-content;
+}
+
+.arrow {
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    background-image: url(../images/icon-arrow.svg);
+}
+
+@media (min-width: 992px) {
+.productive__container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+    align-items: center;
+    text-align: left;
+    margin-left: unset;
+    margin-right: unset;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.productive__content {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+}

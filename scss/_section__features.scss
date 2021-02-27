@@ -1,0 +1,26 @@
+@import './variables';
+
+.section__features {
+    margin-top: 6rem;
+}
+.features__list {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.features__item {
+    text-align: center;
+}
+@media (min-width: 992px) {
+    .features__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin-left: unset;
+        margin-right: unset;
+        padding-left: $section_padding_desktop;
+        padding-right: $section_padding_desktop;
+    }
+    .features__item {
+        padding: 2rem 2.5rem;
+    }
+}

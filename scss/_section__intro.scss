@@ -1,0 +1,38 @@
+@import './variables';
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro__content {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.intro__btn {
+    border-radius: 25px;
+    background: linear-gradient(50deg, $accent_color_cyan, $accent_color_blue);
+    border: none;
+    font-family: $font_heading;
+    color: $neutral_color_white;
+    height: 3rem;
+    font-weight: 700;
+    padding: 0 12px;
+}
+
+.intro__btn:hover {
+    cursor: pointer;
+    background: linear-gradient(50deg, $accent_color_blue, $accent_color_cyan);
+}
+
+@media (min-width: 992px) {
+    .intro__content {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

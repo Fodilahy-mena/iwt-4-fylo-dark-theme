@@ -1,0 +1,51 @@
+@import './variables';
+
+.navigation {
+    display: block;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    max-width: fit-content;
+    min-width: fit-content;
+    height: auto;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    margin-left: auto;
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+    border: 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.navigation__link {
+    font-style: normal;
+    font-weight: bold;
+    background-image: none;
+    line-height: 1.25rem;
+    padding: 1rem .5rem;
+    background-image: none;
+    line-height: 1.25rem;
+    background-position: 1rem 50%;
+    display: block;
+}
+.navigation__item:last-child a {
+    padding-inline-end: 0;
+}
+
+
+
+// On desktop view
+
+
+// @media (min-width: 768px) {
+
+
+// }
